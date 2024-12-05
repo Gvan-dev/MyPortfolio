@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(36, 36, 36), black 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: white;
+    transition: transform 0.5s;
+  }
+.box{
+    /*border: 1px solid white;*/
+}
+
+#top{
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#left{
+    height: inherit;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+#right{
+    height: inherit;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: end;
+    font-size: 22px;
+}
+#right h1, 
+#right h2, 
+#right h4 {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+#right h1:hover, 
+#right h2:hover, 
+#right h4:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+#links{
+    height: inherit;
+    width: 10%;
+}
+#bottom{
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pfp{
+    height: 80%;
+    width: fit-content;
+    filter: brightness(0.6) ;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.pfp:hover{
+    transform:scale(1.2);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.s linear, filter 0.3s linear;
+    filter: brightness(1) invert(1)  ; /* White tint */
+}
+
+.social-icon:hover {
+    transform: scale(1.5); /* Slight zoom effect on hover */
+    filter: brightness(1) invert(1) opacity(0.7); /* Reduced opacity on hover */
+}
+
+
+.tech-logo {
+    height: 75px;
+    margin: 5px;
+    transition: transform 0.5s; /* Smooth transition for scaling */
+}
+
+.tech-logo:hover {
+    transform:  scale(1.75); /* Scale while maintaining position */
+}
+
